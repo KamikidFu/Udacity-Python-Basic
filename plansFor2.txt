@@ -1,0 +1,2 @@
+1. Get how many files in one folder
+2. Loop that times while change file's name
