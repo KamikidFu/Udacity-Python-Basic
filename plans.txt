@@ -1,0 +1,5 @@
+1. Set up a time variable when the app runs
+2. Give a name to app that who will be alarmed
+3. Loop until get the time duration
+4. Show the "Take a break [name]!" message
+5. Update time variable and go back to loop
