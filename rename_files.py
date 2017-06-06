@@ -8,7 +8,7 @@ def rename_files():
 	#2 for each file, rename it
 	os.chdir("/home/vagrant/udacity/pyBase/pics")
 	for file_name in file_list:
-		os.rename(file_name,file_name.translate(Node, "0123456789"))
+		os.rename(file_name,file_name.translate(None, "0123456789"))
 	os.chdir(saved_path)
 
 rename_files()
