@@ -1,28 +1,31 @@
 import turtle
 
-def draw_square():
-	window = turtle.Screen()
-	window.bgcolor("red")
+def draw_shapes(shapeName, shapeSize)
+        if shapeName not in ('Triangle','Circle','Square')
+        print("Wrong arguments")
 
-	brad = turtle.Turtle()
-	brad.shape("turtle")
-	brad.color("lime")
-	brad.speed(2)
-	
-	brad.forward(100)
-	brad.right(90)
-	brad.forward(100)
-	brad.right(90)
-	brad.forward(100)
-	brad.right(90)
-	brad.forward(100)
-	brad.right(90)
+        window = turtle.Screen()
+        window.bgcolor("red")
 
-	angie = turtle.Turtle()
-	angie.shape("arrow")
-	angie.color("blue")
-	angie.circle(25)
+        pen = turtle.Turtle()
+        pen.shape("turtle")
+        pen.color("lime")
+        pen.speed(3)
 
-	window.exitonclick()
+        if shapeName == 'Triangle'
+                for i in range(3)
+                        pen.forward(shapeSize)
+                        pen.left(60)
+        elif shapeName == 'Circle'
+                pen.circle(shapeSize)
+        else
+                for i in range(4)
+                        pen.forward(shapeSize)
+                        pen.right(90)
 
-draw_square()
+        window.exitonclick()
+
+draw_shapes('Triangle',20)
+draw_shapes('Circle',30)
+draw_shapes('Square',50)
+draw_shapes('Line',100)
