@@ -1,5 +1,4 @@
-import os
-import 
+import os 
 
 def rename_files():
 	saved_path = os.getcwd()
